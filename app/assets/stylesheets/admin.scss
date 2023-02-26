@@ -1,19 +1,17 @@
-// Place all the styles related to the Accounts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-.form-container{
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .form-inner-container{
-   display: flex;
- }
- 
- form{
+.form-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-inner-container {
+  display: flex;
+}
+
+form {
   background-color: aliceblue;
   display: flex;
   justify-content: center;
@@ -21,41 +19,41 @@
   padding: 20px;
   gap: 10px;
   width: 400px;
- }
- 
- .image_container{
+}
+
+.image_container {
   width: 400px;
   height: 100%;
   position: relative;
   padding: 2px;
-  img{
-   min-height: 100%;
-   object-fit: cover;
+  img {
+    min-height: 100%;
+    object-fit: cover;
   }
- }
- .image_container::after{
-   content: "";
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   left: 0;
-   top: 0;
-   background-color: white;
-   opacity: 0.5;
- }
- 
- .wrapper-field{
-    display: flex;
-    justify-content: space-between;
- }
- 
- .field{
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
- }
- 
- .submit_btn{
+}
+.image_container::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.wrapper-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.submit_btn {
   background-color: #ff3556;
   border-radius: 10px;
   padding: 10px 30px;
@@ -64,13 +62,12 @@
   text-align: center;
   border: none;
   color: white;
- }
- 
- .link{
-    width: auto;
-    text-align: center;
-    a{
-        text-decoration: none;
-    }
- }
- 
+}
+
+.link {
+  width: auto;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}

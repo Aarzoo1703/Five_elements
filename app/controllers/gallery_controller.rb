@@ -6,7 +6,6 @@ class GalleryController < ApplicationController
     amount_to_charge = session[:amount].to_i
      if request.post?
         ActiveMerchant::Billing::Base.mode = :test
-         # ActiveMerchant accepts all amounts as Integer values in cents    #amount = 100    
          credit_card = ActiveMerchant::Billing::CreditCard.new(
             :first_name => params[:first_name],
             :last_name => params[:last_name],
@@ -14,7 +13,6 @@ class GalleryController < ApplicationController
             :month => params[:check][:month].to_i,
             :year => params[:check][:year].to_i,
             :verification_value => params[:verification_number].to_i)
-            # Validating the card automatically detects the card type    
             gateway =ActiveMerchant::Billing::TrustCommerceGateway.new(
               :login => 'TestMerchant',
               :password =>'password',
